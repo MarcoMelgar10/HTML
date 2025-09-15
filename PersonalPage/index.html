@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Marco Melgar">
+    <title>Pagina Personal</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        #nav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #nav li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        #nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        #nav a:hover {
+            background-color: rgba(255,255,255,0.2);
+            text-decoration: none;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin: 30px 0;
+            font-size: 2.5em;
+            text-align: center;
+        }
+
+        #image_section {
+            margin: 30px auto;
+            text-align: center;
+        }
+
+        #image_section img {
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            border: 3px solid #fff;
+        }
+
+        #information_section {
+            margin: 30px auto;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 10px;
+            max-width: 900px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        #information_section p {
+            text-align: justify;
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        h6 {
+            font-size: 18px;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+
+        #information_section ul {
+            margin-left: 20px;
+            margin-bottom: 25px;
+        }
+
+        #information_section li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        #information_section strong {
+            color: #2c3e50;
+        }
+
+        #information_section ul:last-of-type {
+            list-style: none;
+            padding: 0;
+            margin-left: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        #information_section ul:last-of-type li {
+            background-color: #3498db;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+        }
+
+        #footer_section h6 {
+            color: #fff;
+            border-bottom: 2px solid #3498db;
+            margin-bottom: 20px;
+        }
+
+        #footer_section ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #footer_section li {
+            margin: 0 20px;
+        }
+
+        #footer_section a {
+            color: #fff;
+            padding: 8px 16px;
+        }
+
+        #footer_section a:hover {
+            background-color: rgba(255,255,255,0.2);
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul id="nav">
+            <li><a href="index.html">Perfil</a></li>
+            <li><a href="Proyectos/index.html">Proyectos</a></li>
+            <li><a href="Contacto/index.html">Contacto</a></li>
+        </ul>
+    </header>
+
+    <center>
+        <h1>Marco Antonio Melgar</h1>
+    </center>
+    
+    <section id="image_section">
+        <center>
+            <img src="perfil.jpeg" width="400" height="500" alt="This image could not be loaded">
+        </center>
+    </section>
+
+    <section id="information_section">
+        <center>
+            <p>
+                Soy un desarrollador con experiencia en Java, especializado en la creación de aplicaciones de escritorio usando Swing y AWT, y actualmente ampliando mis conocimientos en JavaFX y Spring Boot. He trabajado aplicando patrones de diseño como MVC, Observer y Command, además de implementar funciones como edición y manejo de imágenes, estructuras de datos personalizadas e interfaces interactivas.
+                También tengo conocimientos en concurrencia y simulaciones en Java, donde he desarrollado proyectos prácticos como el problema de los filósofos comensales y simulaciones de coordinación de procesos. Me interesa la inteligencia artificial en juegos, habiendo creado un prototipo de Pac-Man con IA tanto para el jugador como para los enemigos.
+                En el área de bases de datos, manejo PostgreSQL, incluyendo consultas avanzadas, subconsultas y diseño de esquemas, además de integrar bases de datos en entornos Docker y administrarlas con DBeaver.
+                Cuento con experiencia en administración de servidores Linux (Ubuntu Server), donde he configurado servicios como Apache, MySQL y Postfix. Además, me interesa el desarrollo web full-stack, explorando el uso de Bootstrap para diseñar interfaces modernas y responsivas.
+            </p>
+        </center>
+        
+        <h6>Formación Académica:</h6>
+        <ul>
+            <li><strong>Ingeniería en Sistemas:</strong></li>
+            <p>Universidad Nur. 2023 - En curso</p>
+            <li><strong>Colegiatura</strong></li>
+            <p>Comunidad Cristiana. 2010 - 2022</p>
+        </ul>
+        
+        <br>
+        
+        <h6>Habilidades:</h6>
+        <ul>
+            <li>Docker</li>
+            <li>Java</li>
+            <li>SpringBoot</li>
+            <li>PostgreSQL</li>
+            <li>Kotlin</li>
+            <li>HTML</li>
+        </ul>
+    </section>
+
+    <footer>
+        <section id="footer_section">
+            <h6>Redes Sociales:</h6>
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/marco-melgar-a48155308/">LinkedIn</a>
+                </li>
+                <li>
+                    <a href="https://wa.me/59175678799">WhatsApp</a>
+                </li>
+                <li>
+                    <a href="https://github.com/MarcoMelgar10?tab=repositories">Github</a>
+                </li>
+            </ul>
+        </section>
+    </footer>
+
+</body>
+</html>

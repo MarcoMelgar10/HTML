@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Author" content="Marco Melgar">
+  <title>Proyectos</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: #fff;
+      padding: 15px 0;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    #nav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    #nav li {
+      display: inline;
+      margin: 0 20px;
+    }
+
+    #nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 8px 16px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    #nav a:hover {
+      background-color: rgba(255,255,255,0.2);
+      text-decoration: none;
+    }
+
+    h1 {
+      color: #2c3e50;
+      margin: 30px 0;
+      font-size: 2.2em;
+      text-align: center;
+    }
+
+    #project_section {
+      margin: 30px auto;
+      padding: 40px;
+      background-color: #fff;
+      border-radius: 10px;
+      max-width: 1000px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    #project_section img {
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      border: 3px solid #fff;
+      margin: 10px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    #project_section p {
+      text-align: justify;
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      font-size: 20px;
+      color: #2c3e50;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 5px;
+      display: inline-block;
+    }
+
+    #project_section ul {
+      margin-left: 20px;
+      margin-bottom: 25px;
+    }
+
+    #project_section li {
+      margin-bottom: 8px;
+      color: #555;
+    }
+
+    #project_section strong {
+      color: #2c3e50;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 30px 0;
+      margin-top: 40px;
+    }
+
+    #footer_section h6 {
+      color: #fff;
+      border-bottom: 2px solid #3498db;
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+
+    #footer_section ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    #footer_section li {
+      margin: 0 20px;
+      display: inline;
+    }
+
+    #footer_section a {
+      color: #fff;
+      padding: 8px 16px;
+    }
+
+    #footer_section a:hover {
+      background-color: rgba(255,255,255,0.2);
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <ul id="nav">
+      <li><a href="../index.html">Perfil</a></li>
+      <li><a href="../Proyectos/index.html">Proyectos</a></li>
+      <li><a href="../Contacto/index.html">Contacto</a></li>
+    </ul>
+  </header>
+
+  <section id="project_section">
+    <h1>Biblioteca</h1>
+    <center>
+      <img src="ImgFirstProject.png" width="400" alt="Imagen Biblioteca 1">
+      <img src="ImgFirstProject1.png" width="400" alt="Imagen Biblioteca 2">
+    </center>
+
+    <h3>Descripción del Proyecto</h3>
+    <p>
+      Sistema integral para la administración de una biblioteca, que permite gestionar usuarios, libros, préstamos y devoluciones...
+      <br><br>
+      <strong>Gestión de usuarios:</strong> registrar y consultar lectores.<br>
+      <strong>Administración de libros:</strong> catálogo detallado y búsqueda avanzada.<br>
+      <strong>Préstamos y devoluciones:</strong> control de ejemplares y vencimientos.<br>
+      <strong>Historial y reportes:</strong> estadísticas de uso y libros más solicitados.<br>
+      <strong>Interfaz intuitiva:</strong> navegación clara y accesible.
+    </p>
+
+    <h3>Tecnologías Utilizadas</h3>
+    <ul>
+      <li><strong>Java</strong> con Swing para interfaz.</li>
+      <li><strong>PostgreSQL</strong> como base de datos.</li>
+      <li><strong>JDBC</strong> para la conexión.</li>
+      <li><strong>API WhatsApp</strong> para notificaciones.</li>
+      <li><strong>Ubuntu Server</strong> como entorno de despliegue.</li>
+    </ul>
+  </section>
+
+
+  <section id="project_section">
+    <h1>DogDer</h1>
+    <center>
+      <img src="imgSecundProject.png" width="300" alt="DogDer App">
+    </center>
+
+    <h3>Descripción del Proyecto</h3>
+    <p>
+      Aplicación móvil inspirada en Tinder, diseñada para conectar a dueños de perros que buscan socializar o encontrar compañeros para sus mascotas...
+      <br><br>
+      <strong>Perfiles:</strong> creación de tarjeta para cada perro.<br>
+      <strong>Exploración:</strong> swipes para descubrir otros perros.<br>
+      <strong>Match:</strong> coincidencias habilitan chat.<br>
+      <strong>Filtros:</strong> búsqueda por raza, edad, género o ubicación.
+    </p>
+
+    <h3>Tecnologías Utilizadas</h3>
+    <ul>
+      <li><strong>Kotlin</strong> para Android.</li>
+      <li><strong>Jetpack Components</strong> (ViewModel, LiveData, Room, Navigation).</li>
+      <li><strong>RecyclerView + CardStackView</strong> para swipes.</li>
+      <li><strong>Firebase</strong> (Firestore, Authentication, Storage, Messaging).</li>
+      <li><strong>Glide / Coil</strong> para carga de imágenes.</li>
+    </ul>
+  </section>
+
+
+  <section id="project_section">
+    <h1>Pintore</h1>
+    <center>
+      <img src="imgThirdProject.png" width="400" alt="Pintore Editor">
+    </center>
+
+    <h3>Descripción del Proyecto</h3>
+    <p>
+      Aplicación de escritorio en Java para edición básica e interactiva de imágenes...
+      <br><br>
+      <strong>Herramientas de dibujo:</strong> pinceles, cuadrados, líneas (Bresenham).<br>
+      <strong>Carga de imágenes:</strong> apertura desde sistema de archivos.<br>
+      <strong>Colores:</strong> JColorChooser y toolbar intuitiva.<br>
+      <strong>Historial:</strong> patrón Command para deshacer.<br>
+      <strong>Múltiples imágenes:</strong> pestañas con historiales independientes.
+    </p>
+
+    <h3>Tecnologías Utilizadas</h3>
+    <ul>
+      <li><strong>Java</strong> con Swing.</li>
+      <li><strong>PostgreSQL</strong> como base de datos.</li>
+      <li><strong>JDBC</strong> para conexión.</li>
+      <li><strong>Patrones de diseño:</strong> Command, MVC, Observer.</li>
+    </ul>
+  </section>
+
+
+  <footer>
+    <section id="footer_section">
+      <h6>Redes Sociales:</h6>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/marco-melgar-a48155308/">LinkedIn</a></li>
+        <li><a href="https://wa.me/59175678799">WhatsApp</a></li>
+        <li><a href="https://github.com/MarcoMelgar10?tab=repositories">Github</a></li>
+      </ul>
+    </section>
+  </footer>
+</body>
+</html>

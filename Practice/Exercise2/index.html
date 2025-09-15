@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Actualización OTA Android Wear">
+  <meta name="author" content="Marco Antonio">
+  <title>Ejercicio 2 - OTA Android Wear</title>
+</head>
+<body>
+  <header>
+    <h6 style="text-align:center;">Ejercicio 2</h6>
+    <h2>Instala ya la OTA en tu Android Wear</h2>
+  </header>
+
+  <main>
+    <p>
+      La nueva versión de <strong>Android Wear</strong> que trae a los relojes las pantallas de reloj interactivas, 
+      el modo Together, el Traductor de Google y el soporte <strong>Wi-Fi al LG G Watch R</strong> ya está llegando vía OTA a los relojes durante estos días.
+    </p>
+
+    <figure>
+      <img src="image3.png" alt="Android Wear">
+    </figure>
+
+    <p>
+      Si no quieres esperar para disfrutar de la última versión de Android Wear puedes actualizar manualmente la OTA. De momento la OTA está disponible para descargar para los LG G Watch, LG G Watch R, LG Watch Urbane y Sony SmartWatch 3.
+    </p>
+
+    <section aria-labelledby="compat">
+      <h2 id="compat">Compatibilidad</h2>
+      <ul>
+        <li><span>LG G Watch</span>: LCA43 desde LDZ22D</li>
+        <li><span>LG G Watch R</span>: LCA44B desde LDZ22D</li>
+        <li><span>LG Watch Urbane</span>: LCA44B desde LDZ22D</li>
+        <li><span>Samsung Gear Live</span>: No disponible</li>
+        <li><span>Sony SmartWatch 3</span>: LCA43 desde LDZ22D</li>
+        <li><span>Asus ZenWatch</span>: No disponible</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="steps">
+      <h2 id="steps">Pasos para actualizar manualmente</h2>
+      <p>Necesitas tener instalado el <strong>Android SDK</strong> y seguir estos pasos:</p>
+      <ol>
+        <li>Descargar el archivo de actualización correspondiente a tu dispositivo y versión actual.</li>
+        <li>Guardar el archivo <strong>.zip</strong> en la carpeta <code>platform-tools</code> del Android SDK.</li>
+        <li>Activar las opciones de desarrollo en tu Android Wear: <em>Ajustes &gt; Acerca de</em> y pulsa siete veces sobre <q>número de compilación</q>.</li>
+        <li>Activar la Depuración ADB: <em>Ajustes &gt; Opciones de desarrollo &gt; Depuración ADB</em> &gt; <strong>Sí</strong>.</li>
+        <li>Conectar el reloj al ordenador por USB o por Bluetooth si habilitas <em>Depurar por Bluetooth</em>.</li>
+        <li>Abrir una ventana de comandos y ejecutar <code>adb reboot-bootloader</code>.</li>
+        <li>Entrar a <em>Recovery Mode</em> en el reloj.</li>
+        <li>Cuando veas el icono de Android con una exclamación, toca la pantalla.</li>
+        <li>Seleccionar <em>apply update from ADB</em>.</li>
+        <li>En el terminal del ordenador ejecutar <code>adb sideload</code> seguido del archivo de actualización.</li>
+      </ol>
+
+      <pre><code>adb sideload 20ffa54cc8c2d942511dc6b0cbc55071c7f422cc.signed-lenok-LCA44B-from-LDZ22D.20ffa54c.zip</code></pre>
+
+      <p>
+        Al finalizar, reinicia el dispositivo seleccionando la opción <strong>Reiniciar</strong>. 
+        El proceso actualizará el dispositivo respetando tus datos, tal como haría la OTA automáticamente.
+      </p>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Marco Melgar">
+    <title>Formulario</title>
+  </head>
+<body>
+
+  <h2>Datos Personales</h2>
+
+  <form action="https://form-receiver.vercel.app/api/form" method="post">
+    <fieldset>
+      <legend>Datos personales</legend>
+
+        <div>
+          <label for="nombre">Nombre:</label>
+          <input maxlength="100" type="text" id="nombre" name="nombre">
+        </div>
+        <br>
+        <div>
+          <label for="apellido">Apellido:</label>
+          <input maxlength="150" type="text" id="apellido" name="apellido">
+        </div>
+        <br>
+        <div>
+          <label>Género:</label><br> 
+          <input type="radio" id="genero_masculino" name="genero" value="masculino">
+          <label for="genero_masculino">Masculino</label><br>
+          <input type="radio" id="genero_femenino" name="genero" value="femenino">
+          <label for="genero_femenino">Femenino</label><br>
+        </div>
+        <br>
+        <div>
+          <label for="dni">Cedula Identidad/Pasaporte:</label>
+          <input type="text" id="dni" name="dni" maxlength="25">
+        </div>
+        <br>
+        <div>
+          <label for="fechaNaci">Fecha de Nacimiento:</label>
+          <input type="datetime-local" id="fechaNaci" name="fechaNaci">
+        </div>
+        <br>
+        <div>
+          <label for="phone">Telefono:</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+        <br>
+        <div>
+          <label for="ciudadd">Cuidad Residencia:</label>
+          <select id="ciudadd" name="ciudadd">
+            <option value="SC">Santa Cruz</option>
+            <option value="LP">La paz</option>
+            <option value="CB">Cochabamba</option>
+            <option value="CH">Chuquisaca</option>
+            <OPTION value="TJ">Tarija</OPTION>
+            <OPTION value="BN">Beni</OPTION>
+            <OPTION value="PN">Pando</OPTION>
+            <OPTION value="OR">Oruro</OPTION>
+            <OPTION value="PT">Potosi</OPTION>
+            <OPTION value="EX">Extranjero</OPTION>
+          </select>
+        </div>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Inscripcion</legend>
+        <div>
+          <label>Distancia:</label><br>
+          <input type="radio" id="interes1" name="distancia" value="5K">
+          <label for="distancia">5K</label><br>
+          <input type="radio" id="interes2" name="distancia" value="10K">
+          <label for="distancia">10K</label><br>
+        </div>
+        <br>
+        <div>
+          <label>Talla de Polera:</label><br>
+          <input type="radio" id="interes1" name="poleras[]" value="XS">
+          <label for="interes1">XS</label><br>
+          <input type="radio" id="interes2" name="poleras[]" value="S">
+          <label for="interes2">S</label><br>
+          <input type="radio" id="interes3" name="poleras[]" value="M">
+          <label for="interes3">M</label><br>
+          <input type="radio" id="interes4" name="poleras[]" value="L">
+          <label for="interes4">L</label><br>
+          <input type="radio" id="interes5" name="poleras[]" value="XL">
+          <label for="interes5">XL</label><br>
+          <input type="radio" id="interes6" name="poleras[]" value="XXL">
+          <label for="interes6">XXL</label><br>
+        </div>
+        
+        <br>
+        
+        <div>
+          <label for="cont_emergencia">Nombre del Contacto de Emergencia:</label>
+          <input type="text" id="cont_emergencia" name="cont_emergencia">
+        </div>
+        <br>
+        <div>
+          <label for="telf_emergencia">Teléfono de Contacto de Emergencia:</label>
+          <input maxlength="10" type="tel" id="telf_emergencia" name="telf_emergencia">
+        </div>
+
+        <br>
+
+        <div>
+          <label for="deporte">Deportes que practica:</label>
+          <select id="deporte" name="deporte">
+            <option value="running">Running</option>
+            <option value="gimnasio">Gimnasio</option>
+            <option value="natacion">Natacion</option>
+            <option value="ciclismo">Ciclismo</option>
+            <option value="crossfit">Crossfit</option>
+            <option value="calistenia">Calistenia</option>
+            <option value="otros">Otros</option>
+          </select>
+          
+        </div>
+
+        <br>
+        
+        <div>
+          <label for="otros_deportes">Indique otros deportes no listados:</label>
+          <input type="text" id="otros_deportes" name="otros_deportes">
+        </div>
+
+        <br>
+        
+        <div>
+        <textarea rows="10" cols="50" placeholder="Comentario y sugerencia"></textarea>
+        </div>
+        
+        <br>
+        <li><a href="formulario.html">Convocatoria</a></li>
+        <br>
+        <div>
+        <input type="submit" value="Enviar formulario">
+        <input type="reset" value="Reset">
+        </div>
+  </form>
+
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!-- Declares this file as HTML5 -->
+
+<html lang="en">
+<!-- Root element of the page; "lang" helps search engines and accessibility tools -->
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Character encoding: UTF-8 supports most world languages -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Makes page responsive on small devices -->
+
+  <title>Exhaustive HTML Example</title>
+  <!-- Title of the page (appears in the browser tab) -->
+</head>
+
+<body>
+  <!-- ========== HEADER ========== -->
+  <header>
+    <h1>Welcome to My HTML Learning Page</h1>
+    <p>This page demonstrates the most important HTML elements.</p>
+  </header>
+
+  <!-- ========== NAVIGATION LINKS ========== -->
+  <nav>
+    <!-- Links to sections inside this page (anchor links with #) -->
+    <a href="#about">About</a> | 
+    <a href="#images">Images</a> | 
+    <a href="#lists">Lists</a> | 
+    <a href="#tables">Tables</a> | 
+    <a href="#forms">Forms</a> | 
+    <a href="#media">Media</a> | 
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main>
+    <!-- "main" should contain the unique content of this page -->
+
+    <!-- About section -->
+    <section id="about">
+      <h2>About This Page</h2>
+      <p>
+        This page is written in <strong>pure HTML</strong>.  
+        It contains examples of <em>text formatting</em>, links, images, tables, lists, forms, and media.
+      </p>
+      <p>
+        Example of <abbr title="HyperText Markup Language">HTML</abbr> abbreviation.  
+        Example of a <mark>highlighted word</mark>.
+      </p>
+    </section>
+
+    <!-- Images section -->
+    <section id="images">
+      <h2>Images</h2>
+      <!-- Image with "alt" (important for accessibility and SEO) -->
+      <img src="https://via.placeholder.com/200"
+           alt="Placeholder example image"
+           width="200" height="200">
+
+      <!-- Broken image example (alt text will appear if not found) -->
+      <img src="nonexistent.jpg"
+           alt="This image could not be loaded">
+    </section>
+
+    <!-- Lists section -->
+    <section id="lists">
+      <h2>Lists</h2>
+      <h3>Unordered List</h3>
+      <ul>
+        <li>Apples</li>
+        <li>Bananas</li>
+        <li>Oranges</li>
+      </ul>
+
+      <h3>Ordered List</h3>
+      <ol>
+        <li>Step 1</li>
+        <li>Step 2</li>
+        <li>Step 3</li>
+      </ol>
+
+      <h3>Definition List</h3>
+      <dl>
+        <dt>HTML</dt>
+        <dd>A markup language for creating web pages.</dd>
+        <dt>CSS</dt>
+        <dd>Styles the appearance of web pages.</dd>
+      </dl>
+    </section>
+
+    <!-- Tables section -->
+    <section id="tables">
+      <h2>Tables</h2>
+      <table border="1">
+        <!-- "border" used here for learning; in practice CSS is better -->
+        <caption>Example Table</caption>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Country</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Alice</td>
+            <td>25</td>
+            <td>USA</td>
+          </tr>
+          <tr>
+            <td>Bob</td>
+            <td>30</td>
+            <td>UK</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Forms section -->
+    <section id="forms">
+      <h2>Forms</h2>
+      <!-- Forms allow user input -->
+      <form action="/submit" method="post">
+        <!-- "action" is the server URL, "method" can be GET or POST -->
+
+        <!-- Text input -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <!-- "required" makes it mandatory -->
+
+        <br><br>
+
+        <!-- Email input (validates format automatically) -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <br><br>
+
+        <!-- Password input (hidden characters) -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="6" required>
+        <!-- "minlength" enforces minimum characters -->
+
+        <br><br>
+
+        <!-- Radio buttons (choose one option) -->
+        <p>Choose a role:</p>
+        <input type="radio" id="student" name="role" value="student" checked>
+        <label for="student">Student</label>
+        <input type="radio" id="teacher" name="role" value="teacher">
+        <label for="teacher">Teacher</label>
+
+        <br><br>
+
+        <!-- Checkboxes (choose multiple options) -->
+        <p>Select your hobbies:</p>
+        <input type="checkbox" id="reading" name="hobby" value="reading">
+        <label for="reading">Reading</label>
+        <input type="checkbox" id="music" name="hobby" value="music">
+        <label for="music">Music</label>
+
+        <br><br>
+
+        <!-- Dropdown (select) -->
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+          <option value="us">USA</option>
+          <option value="uk">UK</option>
+          <option value="fr">France</option>
+        </select>
+
+        <br><br>
+
+        <!-- Textarea -->
+        <label for="message">Your message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="30"></textarea>
+
+        <br><br>
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit Form">
+      </form>
+    </section>
+
+    <!-- Media section -->
+    <section id="media">
+      <h2>Multimedia</h2>
+
+      <!-- Audio with controls -->
+      <audio controls>
+        <source src="sample.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <br><br>
+
+      <!-- Video with controls -->
+      <video width="320" height="240" controls>
+        <source src="sample.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="contact">
+    <p>&copy; 2025 My Learning Website</p>
+    <p>Contact: <a href="mailto:example@example.com">example@example.com</a></p>
+    <!-- "mailto:" opens the user's email client -->
+  </footer>
+
+</body>
+</html>
